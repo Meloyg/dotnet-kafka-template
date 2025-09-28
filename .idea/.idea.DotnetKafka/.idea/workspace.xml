@@ -11,14 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="195c802c-5e45-4d61-9adb-a6f346bbd951" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DotnetKafka.Product/Controllers/ProductsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DotnetKafka.Product/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DotnetKafka.Product/Models/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DotnetKafka.Product/Services/KafkaProducer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DotnetKafka.Order/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DotnetKafka.Order/Models/Product.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DotnetKafka.Order/Services/KafkaConsumerHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DotnetKafka/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DotnetKafka/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DotnetKafka.Order/DotnetKafka.Order.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DotnetKafka.Order/DotnetKafka.Order.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DotnetKafka.Product/DotnetKafka.Product.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/DotnetKafka.Product/DotnetKafka.Product.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DotnetKafka.Product/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DotnetKafka.Product/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DotnetKafka.Order/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/DotnetKafka.Order/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c9b91f48e04c4e8aafb55c7298ac01056e600/e7/d3c20ce4/ProducerBuilder`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/DotnetKafka.Order/Models/Product.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/DotnetKafka.Order/Services/KafkaConsumerHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/DotnetKafka.Product/Controllers/ProductsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/DotnetKafka.Product/Models/Product.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/DotnetKafka.Product/Services/KafkaProducer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -125,6 +126,27 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="DotnetKafka.Order/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="dotnetkafka.order" />
+          <option name="containerName" value="dotnetkafka.order" />
+          <option name="contextFolderPath" value="$PROJECT_DIR$" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/DotnetKafka.Order/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="DotnetKafka.Product/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -160,7 +182,7 @@
       <updated>1759032610091</updated>
       <workItem from="1759032611123" duration="287000" />
       <workItem from="1759032955376" duration="120000" />
-      <workItem from="1759033095858" duration="622000" />
+      <workItem from="1759033095858" duration="2284000" />
     </task>
     <servers />
   </component>
